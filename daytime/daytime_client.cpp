@@ -24,7 +24,7 @@ int main() {
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_port = htons(PORT);
 
-    // Задайте IP-адрес сервера (замените "127.0.0.1" на нужный IP)
+    
     if (inet_pton(AF_INET, "127.0.0.1", &serverAddr.sin_addr) <= 0) {
         std::cerr << "Ошибка в IP адресе сервера" << std::endl;
         close(sockfd);
